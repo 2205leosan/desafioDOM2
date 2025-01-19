@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Playfair:ital,opsz,wdth,wght@0,5..1200,87.5,700;1,5..1200,87.5,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .foto{
+        margin-top: 20px;
+        width: 80%;
+    }
+}
+
+.container{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-image: url('/assets/img/fondo.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px; 
+    border-radius: 10px; 
+    position: relative; 
+ 
+
+    .sticker{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 30px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        select{
+            width: 100%;
+            background-color: rgb(0, 0, 5);
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: rgb(184, 249, 6);
+                color: black;
+            }
+
+            
+        }
+
+        
+
+    }
+   
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 30px;
+    
+
+
+    .verificar {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-size: 3rem;
+        font-family: "Macondo", serif;
+       
+    }
+
+    button{
+        width: 30%;
+        padding: 10px;
+        background-color: rgb(184, 249, 6);
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        &:hover{
+            background-color: rgb(0, 0, 5);
+            color: white;
+        }
+        
+    }
+    
+}
+
+.pass{
+    width:100%;
+    height: 100%;
+    position: relative;
+
+
+    .codigo{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .video{
+    
+            width: 50%;
+            height: auto; 
+           
+        }
+         
+        .codigos{
+            position: absolute; 
+            bottom: 100px;
+            display: flex; 
+            gap: 10px;
+
+            select{
+                padding: 5px;
+                font-size: 2rem;
+                border-radius: 40%;
+                text-align: center;
+                background-color: black;
+                color: white;
+                border: 2px solid greenyellow;
+            }
+            
+        }
+
+        button{
+            position: absolute;
+            background-color: black;
+            bottom: 60px;
+            font-size: 1.2rem;
+            color: greenyellow;
+            padding: 5px 10px;
+            border-radius: 10px;
+            width: 10%;
+            cursor: pointer;
+
+            &:click{
+                cursor: wait;
+            }
+        }
+
+        .respuesta{
+            position: absolute;
+            bottom: 5px;
+            font-size: 2rem;
+            color: greenyellow;
+            font-family: "Macondo", serif;
+            background-color: black;
+            padding: 3px;
+           
+            
+        }
+        
+    }
+
+
+
+}
